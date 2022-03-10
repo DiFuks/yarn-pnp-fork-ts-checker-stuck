@@ -10,7 +10,7 @@
     "start": "webpack serve --mode=development"
   },
   "dependencies": {
-    "fork-ts-checker-webpack-plugin": "^6.5.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.1",
     "ts-loader": "^9.2.7",
     "typescript": "^4.6.2",
     "webpack": "^5.70.0",
