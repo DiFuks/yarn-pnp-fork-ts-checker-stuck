@@ -13,7 +13,7 @@ const webpackConfig = {
 	},
 	target: 'web',
 	resolve: {
-		extensions: ['.ts'],
+		extensions: ['.ts', '.js'],
 	},
 	module: {
 		rules: [
@@ -31,6 +31,13 @@ const webpackConfig = {
 		new ForkTsCheckerWebpackPlugin(),
 		new	ProgressPlugin(),
 	],
+	devServer: {
+		port: 9000,
+		host: 'localhost',
+		historyApiFallback: false,
+		open: true,
+		hot: true,
+	},
 }
 
 module.exports = webpackConfig
